@@ -3,6 +3,7 @@ type = "gcp_stackdriver_logs"
 inputs = [ "log_json" ]
 log_id = "name-of-this-log-to-show-up-in-gcp"
 project_id = "imgtoslides"
+severity_key = "message.level"
 
   [sinks.gcp_logs.resource]
   type = "global"
